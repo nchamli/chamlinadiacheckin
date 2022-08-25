@@ -1,0 +1,184 @@
+$res_mobile: 730px;
+$color:black;
+@mixin fondo($fondo) {
+	background-color: $fondo
+}
+
+html,
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    display: flex;
+    justify-content: center;}
+.menu_superior {
+    @include fondo(rgb(136, 156, 236))}
+
+
+.contenedormenu_superior {
+	width: 900px;
+	margin: auto;
+	display: flex
+    img {
+        width: 400%;
+    }
+    .logo {
+        width: 300px;
+    }
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+    ul {
+        display: flex;
+        column-gap: 10px;
+    }
+    a {
+        color: $color;
+        text-decoration: none;
+    }
+}
+
+.menu2 {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    ul {
+        display: flex;
+        column-gap: 10px;
+    }
+    a {
+        color: $color;
+        text-decoration: none;
+    }
+}
+
+.grid {
+	width: 900px;
+	margin: auto;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 1 fr;
+	grid-template-rows: 200px 200px 200px;
+	grid-template-areas: 'micros'
+		'aereos'
+        'cancun';
+        >div {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+        }
+        a {
+            color: royalblue;
+            font-size: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                opacity: 0.5;
+            }
+        }     
+}
+.grid1 {
+	grid-area: micros;
+    a {
+        background-image: url(../imagenes/micro.argentina.png);
+    }
+}
+.grid2 {
+	grid-area: aereos;
+    a {
+        background-image: url(../imagenes/avion.argentina.png)
+    }
+}
+.grid3 {
+	grid-area: cancun;
+    a {
+        background-image: url(../imagenes/avion.cancun.png);
+    }
+}
+
+.logo_footer {
+	display: flex;
+	align-items: center;
+}
+
+.footer {
+	border-style: solid;
+	color: $color;
+    @include fondo(rgb(136, 156, 236))}
+
+.barra {
+	padding: 15px;
+    a {
+        color: $color;
+        text-decoration: none;
+    }
+    &:hover{
+        color: rgb(240, 237, 237);
+    }
+}
+
+.menu_inferior {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+.menu2 a{
+	text-decoration: none;
+	color: $color;
+	list-style: none;
+}
+
+.fondo {
+
+	background-color:beige
+}
