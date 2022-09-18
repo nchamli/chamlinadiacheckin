@@ -1,6 +1,5 @@
 $res_mobile: 730px;
 $color: #051E7C;
-
 @mixin fondo($fondo) {
     background-color: $fondo
 }
@@ -10,7 +9,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: arial;
-    background-color: #F5F5F5;    }
+    background-color: #F5F5F5;
+  
+
+    }
 
 ul {
     list-style: none;
@@ -322,7 +324,28 @@ p {
 }
 
 
-   
+.contacto {
+    width: 400px;
+    background-color: #D5DBDB;
+    padding: 30px;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 10px;
+
+
+    .formulario{
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid#051E7C;
+        font-size: 18px;
+    }
+}
+
+
+ 
+
    
    
 

@@ -226,3 +226,18 @@ p {
 
 .dropdown {
   padding: 15px; }
+
+.contacto {
+  width: 400px;
+  background-color: #D5DBDB;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px; }
+  .contacto .formulario {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #051E7C;
+    font-size: 18px; }
