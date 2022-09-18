@@ -9,6 +9,9 @@
 	<meta name="description" content="venta de paquetes para viajes en argentina y cancun">
 	<title>MoodCheckIn</title>
 	<link rel="stylesheet" href="../estilos/estilos.css">
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
 <body>
@@ -28,16 +31,37 @@
 
 	</nav>
 	<section>
-		<h1>PAQUETES EN MICRO</h1>
-		<h2>CONOCE NUESTROS PRÓXIMOS DESTINOS EN BUS</h2>
-		<div class="menu2">
-			<ul>
-				<li><a href="#termas">Termas de Colón</a></li>
-				<li><a href="#cataratas">Cataratas del Iguazú</a></li>
-				<li><a href="#bariloche">Bariloche</a></li>
-			</ul>
+		<h1>Destinos en Micro</h1>
+		<div class="containercard">
+			<div class="card">
+				<img src="../imagenes/termas.jpg">
+				<h2>Termas de Colón</h2>
+				<p>Disfruta de la naturaleza en su estado puro, sensaciones de agua, verde, sol y paisaje. Ideal para relajarse.
+				</p>
+
+				<a href="#detalle-termas">Detalles</a>
+			</div>
+			<div class="card">
+				<img src="../imagenes/bariloche.jpg">
+				<h2>Bariloche</h2>
+				<p>Una historia romántica rodeada de paisajes naturales. Aventuras en la montaña, llena de acción,
+					velocidad y adrenalina.
+				</p>
+
+				<a href="#detalle-bariloche">Detalles</a>
+			</div>
+			<div class="card">
+				<img src="../imagenes/cataratas.jpg">
+				<h2>Cataratas Del Iguazú</h2>
+				<p>Una de las 7 maravillas naturales del mundo, con más de 250 saltos de agua en plena Selva Paranense.
+				</p>
+
+				<a href="#detalle-cataratas">Detalles</a>
+			</div>
 		</div>
+
 		<div>
+			<a name="detalle-termas"></a>
 			<h2>TERMAS DE COLÓN</h2>
 			<h3>Disfruta de 5 días en las Termas de Colón,Entre Ríos.</h3>
 			<p>Las termas se encuentran ubicadas en Entre Rios, a 328 Km de
@@ -54,20 +78,46 @@
 
 		</div>
 		<div>
-			<h2>CATARATAS DEL IGUAZÚ</h2>
-			<h3> Disfruta de 5 dias recorriendo las Cataratas del Iguazu, Misiones
-			</h3>
-			<p>Conocé una de las 7 maravillas del Mundo, Las Cataratas del Iguazú,
-				ubicadas en la provincia de Misiones a
-				1.300Km de la Ciudad Autónoma de Buenos Aires.
-				Observaremos más de 2 km de cascadas que superan los 70 metros de altura, una manifestación espectacular
-				de
-				uno de los recursos cada vez más escasos del planeta: el agua.
-				Nos hospedaremos en el Hotel Amayal, habitaciones dobles, triples y cuadruples.
-			</p>
-			<div class="center"><img src="../imagenes/cataratas.jpg" alt="cataratas" title="cataratas" width="400">
+			<h3>CATARATAS DEL IGUAZÚ</h3>
+			<div class="contenedor-micros">
+				<div class="texto-micros">
+					<p>Ubicada a 3.156Km desde la Ciudad Autónoma de Buenos Aires. Ushuaia se encuentra al final de la
+						Patagonia austral, es el extremo sur de la Argentina, el fin del mundo o como la llaman algunos:
+						el principio de todo.
+					</p>
+					<p>En este impresionante viaje, visitará el Parque Nacional de Tierra del Fuego con un paseo en el
+						Tren del Fin del Mundo, navegará por el Canal de Beagle con visita a Islas Bridges y Faro del
+						Fin del Mundo. Para los mas aventureros, tendremos una excursión de Trekking por la Laguna
+						Esmeralda y actividades de Ski en el Cerro Castor.
+					</p>
+					<p>
+						El paquete cuenta con hospedaje en Arakur Ushuaia Resort & Spa, excursiones, traslados In/Out y
+						vuelo directo desde El Aeroparque Metropolitano Jorge Newbery.
+					</p>
+
+				</div>
+
+				<div class="img">
+					<img src="../imagenes/ciudadaustral.jpg" alt="Ciudad de Ushuaia" title="Ciudad de Ushuaia">
+				</div>
+				<div class="img">
+					<img src="../imagenes/farofindelmundo.jpg" alt="Faro del Fin del Mundo"
+						title="Faro del Fin del Mundo">
+				</div>
 			</div>
-			<div class="center"><a href="contacto.html">CONTACTARME CON UN ASESOR</a></div><br>
+			<div class="dropdown">
+				<a class="btn btn-secondary dropdown-toggle" href="contacto.html" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false">
+					Próximas salidas
+				</a>
+
+				<ul class="proximas-salidas">
+					<li><a class="dropdown-item" href="contacto.html">Octubre</a></li>
+					<li><a class="dropdown-item" href="contacto.html">Noviembre</a></li>
+					<li><a class="dropdown-item" href="contacto.html">Diciembre</a></li>
+				</ul>
+			</div>
+			
 
 
 
@@ -105,9 +155,11 @@
 		</ul>
 		<small class="COP">Copyright Mood Check In</small>
 	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
 		crossorigin="anonymous"></script>
+
 </body>
 
 </html>
