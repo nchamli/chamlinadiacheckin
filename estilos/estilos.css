@@ -32,7 +32,7 @@ p {
   justify-content: center; }
 
 .menu_superior {
-  background-color: #F5F5F5; }
+  background-color: #f5f5f5; }
 
 .contenedormenu_superior {
   width: 900px;
@@ -58,61 +58,6 @@ p {
     color: #051E7C;
     text-decoration: none; }
 
-.menu2 {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .menu2 ul {
-    display: flex;
-    column-gap: 10px; }
-  .menu2 a {
-    color: #051E7C;
-    text-decoration: none; }
-
-.grid {
-  width: 900px;
-  margin: auto;
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: 1 fr;
-  grid-template-rows: 200px 200px 200px;
-  grid-template-areas: 'micros' 'aereos' 'cancun'; }
-  .grid > div {
-    display: flex;
-    align-items: stretch;
-    justify-content: center; }
-  .grid a {
-    color: #080361;
-    font-size: 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.4s ease-in-out; }
-    .grid a:hover {
-      opacity: 0.5; }
-
-.grid1 {
-  grid-area: micros; }
-  .grid1 a {
-    background-image: url(../imagenes/micro.argentina.png); }
-
-.grid2 {
-  grid-area: aereos; }
-  .grid2 a {
-    background-image: url(../imagenes/avion.argentina.png); }
-
-.grid3 {
-  grid-area: cancun; }
-  .grid3 a {
-    background-image: url(../imagenes/avion.cancun.png); }
-
 .logo_footer {
   display: flex;
   align-items: center; }
@@ -122,7 +67,7 @@ p {
   background-color: #f5f5f5; }
 
 .barra {
-  padding: 15px; }
+  padding: 20px; }
   .barra a {
     color: #051E7C;
     text-decoration: none; }
@@ -135,14 +80,6 @@ p {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-
-.menu2 a {
-  text-decoration: none;
-  color: #051E7C;
-  list-style: none; }
-
-.fondo {
-  background-color: #F5F5F5; }
 
 .containercard {
   width: 100%;
