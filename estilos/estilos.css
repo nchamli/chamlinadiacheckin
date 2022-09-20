@@ -3,14 +3,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: arial;
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  overflow-x: hidden; }
 
 ul {
   list-style: none;
   padding: 0; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 h1 {
   display: flex;
@@ -86,7 +88,7 @@ p {
   max-width: 1200px;
   height: 430px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   margin: auto; }
   .containercard .card {
@@ -127,7 +129,8 @@ p {
   .contenedor-cancun img {
     width: 400px;
     height: 300px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    flex-wrap: nowrap; }
 
 .dropdown {
   padding: 15px; }
@@ -143,7 +146,8 @@ p {
   .contenedor-aereos img {
     width: 400px;
     height: 300px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    flex-wrap: nowrap; }
 
 .dropdown {
   padding: 15px; }
@@ -159,7 +163,8 @@ p {
   .contenedor-micros img {
     width: 400px;
     height: 300px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    flex-wrap: nowrap; }
 
 .dropdown {
   padding: 15px; }
